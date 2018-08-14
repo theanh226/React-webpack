@@ -69,7 +69,18 @@ class Products extends Component {
                  <br />
                  {elemenst}
                 </div>
+
+                <div class="test-props">
+                  <p style={{fontSize: 3 + 'em'}}> Name: {this.props.name}</p>
+                  <p> Price: {this.props.price} $</p>
+                  <div class="img-mobile-wapper">
+                  <img src={this.props.image} alt={this.props.name} /> 
+                  </div>
+
+                </div>
             </div>
+
+
         );
     }
 }

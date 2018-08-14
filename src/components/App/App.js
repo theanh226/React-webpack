@@ -5,6 +5,16 @@ import '../../style.css';
 import Header from './Header';
 import Products from './Products';
 
+// class App extends Component {
+//     render(){
+//         return(
+//             <div>
+//                 <h1>Header Component</h1>
+//             </div>
+//         );
+//     }
+// }
+
 ReactDOM.render(
     <div class="container">
         <h1 class="text-warning">
@@ -18,7 +28,6 @@ ReactDOM.render(
             <Products />
         </div>
     </div>
-
     ,
      document.getElementById('root')
 );
