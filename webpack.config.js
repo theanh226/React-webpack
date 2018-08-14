@@ -9,7 +9,7 @@ const VENDOR_LIBS = [
 
 //change port
 const devServer = {
-    port: 4000,
+    port: 4002,
     open: true,
     disableHostCheck: true,
     historyApiFallback: true,
