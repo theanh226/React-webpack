@@ -6,7 +6,7 @@ import Header from './Header';
 import Products from './Products';
 
 ReactDOM.render(
-    <div class="">
+    <div class="container">
         <h1 class="text-warning">
         this is App components
         </h1>
