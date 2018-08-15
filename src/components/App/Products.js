@@ -61,7 +61,7 @@ class Products extends Component {
                     <h2> name : {users.name}</h2>
                     <h2> name : {users.age}</h2>
                 </div>
-    });
+        });
         var a = 5 ;
         var testString = 'The Anh Tran';
         var b = 10;
@@ -71,7 +71,9 @@ class Products extends Component {
              id:1,
              status : false
         }
-        return(
+
+
+        return (
             <div>
             <input ref={data} /> 
             <button class="btn btn-default" onClick={this.saveData}>Save data</button>
@@ -99,8 +101,6 @@ class Products extends Component {
                   
                 </div>
             </div>
-
-
         );
     }
 }

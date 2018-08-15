@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../style.css';
 import Header from './Header';
 import Products from './Products';
+import UseState from './UseState';
 
 // class App extends Component {
 //     render(){
@@ -17,7 +18,7 @@ import Products from './Products';
 
 ReactDOM.render(
     <div class="container">
-        <h1 class="text-warning">
+        {/* <h1 class="text-warning">
         this is App components
         </h1>
         <p class="test">Some text</p>
@@ -26,6 +27,11 @@ ReactDOM.render(
         </div>
         <div className="">
             <Products />
+        </div>
+
+        <hr /> */}
+        <div class="state border-top border-danger mt-4">
+            <UseState />
         </div>
     </div>
     ,

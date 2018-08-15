@@ -11,3 +11,7 @@ img{
     width: auto;
     height: 100%;
 }
+button,input{
+    box-shadow: none !important;
+    outline: none !important;
+}
