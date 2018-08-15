@@ -6,6 +6,7 @@ import '../../style.css';
 
 
 class Products extends Component {
+    
     showInfoProduct(product){
         if(product.status){
 
@@ -20,9 +21,23 @@ class Products extends Component {
     
         }
     };
-
+    // onBuy(){
+    //     alert(this.props.name + ' price ' + this.props.price);
+    // }
+    onBuy2 = () => {
+        alert(this.props.name + ' price ' + this.props.price);
+        console.log('this is onBuy2 function');
+    }
+    // constructor(props) {
+    //     super(props);
+    //     this.onBuy = this.onBuy.bind(this); // call function to use
+    // }
+    saveData = () => {
+        console.log(this.refs.data.value);
+    }
     
     render(){
+        var data = React.createRef();
         var users = [
         {
             id:1,
@@ -58,25 +73,30 @@ class Products extends Component {
         }
         return(
             <div>
-                <h1>Products Component</h1>
+            <input ref={data} /> 
+            <button class="btn btn-default" onClick={this.saveData}>Save data</button>
+                {/* <h1>Products Component</h1>
                 <h2> this is variable a : {a} </h2>
                 <h2> this is variable b : {b} </h2>
                 <h3> this is variable testString : {testString} </h3>
-                <h4> Result a + b = {a + b }</h4>
+                <h4> Result a + b = {a + b }</h4> */}
 
                 <div className="showProducts p-1">
-                {this.showInfoProduct(productsMobile)}
+                {/* {this.showInfoProduct(productsMobile)}
                  <br />
-                 {elemenst}
+                 {elemenst} */}
                 </div>
 
-                <div class="test-props">
+                <div class="test-props border-bottom border-dark">
                   <p style={{fontSize: 3 + 'em'}}> Name: {this.props.name}</p>
                   <p> Price: {this.props.price} $</p>
                   <div class="img-mobile-wapper">
                   <img src={this.props.image} alt={this.props.name} /> 
                   </div>
-
+                  <div>
+                  <button class="btn btn-success" onClick={this.onBuy2} > Mua Ngay</button>
+                  </div>
+                  
                 </div>
             </div>
 

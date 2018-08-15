@@ -4,6 +4,10 @@ import '../../style.css';
 import Products from './Products';
 
 class Header extends Component {
+    handleClick(){
+        console.log('this is handleClick function');
+    }
+
     render(){
 
         var Mobiles = [{
@@ -25,23 +29,28 @@ class Header extends Component {
             name:'Iphone x',
             price:500,
             image :'https://cnet4.cbsistatic.com/img/KnuL1WDed3sanatLbE4YDddJGVg=/2017/10/31/312b3b6e-59b7-499a-aea4-9bc5f9721a21/iphone-x-54.jpg',
-            status:true
+            status:false
         }];
 
         let Element = Mobiles.map((product,index) =>{
             let result = '';
             if(product.status){
-                return<Products key={index}
-                price={product.price}
-                name={product.name}
-                image={product.image}
-             />
+                return (
+                <Products 
+                    key={index}
+                    price={product.price}
+                    name={product.name}
+                    image={product.image}
+                />)
+
             }
-            return result;
+            return console.log(result);
         });
+
         return(
             <div>
                 {Element}
+                {/* <Products name='iphone7' price='700' /> */}
             </div>
         );
     }

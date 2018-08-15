@@ -21,10 +21,10 @@ ReactDOM.render(
         this is App components
         </h1>
         <p class="test">Some text</p>
-        <div className="bg-success">
+        <div className="">
             <Header />
         </div>
-        <div className="bg-danger">
+        <div className="">
             <Products />
         </div>
     </div>
